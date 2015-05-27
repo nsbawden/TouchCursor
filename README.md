@@ -12,6 +12,7 @@
 3. Alternativly add the plugin source code directly to one of your project files such as main.js.
 4. Load the plugin and call createCursorKeys().
 
+#### Using the plugin
 
 Example plugin setup inside your create() function
 
