@@ -31,6 +31,7 @@
   */
 
 (function (Phaser) {
+    //'use strict';
     /**
      * TouchCursor Plugin for Phaser
      */
@@ -97,10 +98,10 @@
 
         if (this.settings.touchImage) {
             this.images = [];
-            this.images.push(this.game.add.sprite(0, 0, 'compass'));
-            this.images.push(this.game.add.sprite(0, 0, 'finger'));
-            this.images.push(this.game.add.sprite(0, 0, 'finger'));
-            this.images.push(this.game.add.sprite(0, 0, 'touched'));
+            this.images.push(this.game.add.sprite(0, 0, 'touchcursor_compass'));
+            this.images.push(this.game.add.sprite(0, 0, 'touchcursor_finger'));
+            this.images.push(this.game.add.sprite(0, 0, 'touchcursor_finger'));
+            this.images.push(this.game.add.sprite(0, 0, 'touchcursor_touched'));
             this.images.forEach(function (e) {
                 e.anchor.set(0.5);
                 e.visible = false;
@@ -168,7 +169,7 @@
     var setDirection = function () {
         var cc = this.cursors;
         var d = initialPoint.distance(this.input.activePointer.position);
-        var maxDistanceInPixels = this.settings.maxDistance;
+        var maxDistance = this.settings.maxDistance;
 
         var deltaX = this.input.activePointer.position.x - initialPoint.x;
         var deltaY = this.input.activePointer.position.y - initialPoint.y;
