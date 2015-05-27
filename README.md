@@ -43,3 +43,19 @@ For special applications images can be shown at both ends and along the swipe du
             game.load.image('touchcursor_touched', 'touched.png');
         },
 
+
+
+To intialize the plugin for touch only simply don't supply the *both* or *autodetect* options or set them to false. You may then handle cursor keystrokes with your own routines.
+
+This plugin addes a speed property to the cursors object with the following attributes. Speed attributes only have values other than 0 when touch events occure. Keystroke events do not set the speed attributes.
+
+        cursors.speed.x         // The x axis speed -99 to 99
+        cursors.speed.y         // The y axis speed -99 to 99
+        cursors.speed.top       // The top absolute x or y speed 0 to 99
+        cursors.speed.xa        // The absolute x speed 0 to 99
+        cursors.speed.ya        // The absolute y speed 0 to 99
+
+The following additional properties are set on the cursors object.
+
+        cursors.isTouch         // Touch screen has been found to exist
+        cursors.hasSpeed        // Touch event produced values and speed is set
