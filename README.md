@@ -6,7 +6,9 @@
 
 1. Copy the files to your game folder or to a folder under it such as "plugins/TouchCursor".
 2. Include the plugin file in your page head.
+
         <script type="text/javascript" src="plugins/TouchCursor/TouchCursor.js"></script>
+
 3. Alternativly add the plugin source code directly to one of your project files such as main.js.
 4. Load the plugin and call createCursorKeys().
 
