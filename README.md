@@ -59,7 +59,7 @@ For special applications images can be shown at both ends and along the swipe du
 
 To intialize the plugin for touch only simply don't supply the *both* or *autodetect* options or set them to false. You may then handle cursor keystrokes with your own routines.
 
-This plugin addes a speed property to the cursors object with the following attributes. Speed attributes only have values other than 0 when touch events occure. Keystroke events do not set the speed attributes.
+This plugin addes a speed property to the cursors object with the below attributes. Speed attributes only have values other than 0 when touch events occure. Keystroke events do not set the speed attributes. Speed can be used to increase acceleration according to the length of the swipe and other nifty uses on touch screens.
 
         cursors.speed.x         // The x axis speed -99 to 99
         cursors.speed.y         // The y axis speed -99 to 99
@@ -74,4 +74,4 @@ The following additional properties are set on the cursors object.
 
 #### Files
 
-I leave it to you to minify the plugin file as you require. It simplifies my maintenance of this plugin. A great online minifier can be found at http://jscompress.com/
+I leave it to you to minify the plugin file as you require. It simplifies my maintenance of this FREE plugin. A great online minifier can be found at http://jscompress.com/
