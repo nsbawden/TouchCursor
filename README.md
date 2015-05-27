@@ -35,3 +35,13 @@ Default settings can be changed by adding to the creatCursorKeys() options list
             lockAxis: true,     // single key input (no diagonal)
             triggerSpeed: 20    // Long swipe required to activate key
         });
+
+For special applications images can be shown at both ends and along the swipe during the touch stroke. This adds visual feedback but can also slow down input response, especailly on mobile devices. To add image support supply the touchImage: true option and add the following code to the preload() function to load the images. The images must be in the respective project folder for loading.
+
+        preload: function () {
+        // Load part of the jsfiddle logo image as a sprite
+            game.load.image('touchcursor_compass', 'compass.png');
+            game.load.image('touchcursor_finger', 'finger.png');
+            game.load.image('touchcursor_touched', 'touched.png');
+        },
+
