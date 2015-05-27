@@ -78,14 +78,14 @@
         }
 
         if (this.settings.autodetect && !this.settings.both && !this.isTouch) {
-            this.cursors = game.input.keyboard.createCursorKeys();
+            this.cursors = this.game.input.keyboard.createCursorKeys();
             this.cursors.isTouch = false;
             this.cursors.hasTouch = false;
             return this.cursors;
         }
 
         if (this.settings.both) {
-            this.cursors = game.input.keyboard.createCursorKeys();
+            this.cursors = this.game.input.keyboard.createCursorKeys();
             this.cursors.isTouch = this.isTouch;
             this.cursors.speed = {
                 x: 0,
@@ -116,7 +116,7 @@
     };
 
     // Default settings
-    Phaser.Plugin.TouchCursor.prototype.settings = {        
+    Phaser.Plugin.TouchCursor.prototype.settings = {
         maxDistance: 200, // max distance from initial touch
         triggerSpeed: 12, // minimum speed to trigger key down
         lockAxis: false, // lock to x and y axis - no diagonal
