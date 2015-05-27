@@ -18,13 +18,13 @@ Example of using the cursors in your update() funciton
 
 Default settings can be changed by adding to the creatCursKeys options list
 
-    // Default settings
-    Phaser.Plugin.TouchCursor.prototype.settings = {
-        maxDistance: 200, // max distance from initial touch
-        triggerSpeed: 12, // minimum speed to trigger key down
-        lockAxis: false, // lock to x and y axis - no diagonal
-        both: false, // combine keyboard and touch/mouse input
-        autodetect: false, // autodetect keyboard or touch
-        touchImage: false // display images at touch points
-    };
+        // Default settings
+        Phaser.Plugin.TouchCursor.prototype.settings = {
+            maxDistance: 200, // max distance from initial touch
+            triggerSpeed: 12, // minimum speed to trigger key down
+            lockAxis: false, // lock to x and y axis - no diagonal
+            both: false, // combine keyboard and touch/mouse input
+            autodetect: false, // autodetect keyboard or touch
+            touchImage: false // display images at touch points
+        };
 
