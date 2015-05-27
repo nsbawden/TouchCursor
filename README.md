@@ -19,14 +19,12 @@ Example of using the cursors in your update() funciton
 Default settings can be changed by adding to the creatCursorKeys() options list
 
         // Default settings
-        Phaser.Plugin.TouchCursor.prototype.settings = {
             maxDistance: 200, // max distance from initial touch
             triggerSpeed: 12, // minimum speed to trigger key down
             lockAxis: false, // lock to x and y axis - no diagonal
             both: false, // combine keyboard and touch/mouse input
             autodetect: false, // autodetect keyboard or touch
             touchImage: false // display images at touch points
-        };
 
         Example:
         
@@ -39,7 +37,7 @@ Default settings can be changed by adding to the creatCursorKeys() options list
 For special applications images can be shown at both ends and along the swipe during the touch stroke. This adds visual feedback but can also slow down input response, especailly on mobile devices. To add image support supply the touchImage: true option and add the following code to the preload() function to load the images. The images must be in the respective project folder for loading.
 
         preload: function () {
-        // Load part of the jsfiddle logo image as a sprite
+            // Load touch indicator resource images
             game.load.image('touchcursor_compass', 'compass.png');
             game.load.image('touchcursor_finger', 'finger.png');
             game.load.image('touchcursor_touched', 'touched.png');
