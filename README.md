@@ -16,7 +16,7 @@ Example of using the cursors in your update() funciton
         this.logo.body.velocity.y = cc.up.isDown ? -200 : (cc.down.isDown ? 200 : 0);
         this.logo.body.velocity.x = cc.left.isDown ? -200 : (cc.right.isDown ? 200 : 0);
 
-Default settings can be changed by adding to the creatCursKeys options list
+Default settings can be changed by adding to the creatCursorKeys() options list
 
         // Default settings
         Phaser.Plugin.TouchCursor.prototype.settings = {
@@ -28,3 +28,10 @@ Default settings can be changed by adding to the creatCursKeys options list
             touchImage: false // display images at touch points
         };
 
+        Example:
+        
+        this.cursors = game.touchCursor.createCursorKeys({
+            both: true,         // both keyboard and touch
+            lockAxis: true,     // single key input (no diagonal)
+            triggerSpeed: 20    // Long swipe required to activate key
+        });
