@@ -1,6 +1,6 @@
 ## TouchCursor
 
-Phaser plugin adds native cursor movement for touch screen devices
+### Phaser plugin adds native cursor movement for touch screen devices
 
 Example plugin setup inside your create() function
 
