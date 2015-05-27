@@ -71,3 +71,7 @@ The following additional properties are set on the cursors object.
 
         cursors.isTouch         // Touch screen has been found to exist
         cursors.hasSpeed        // Touch event produced values and speed is set
+
+#### Files
+
+I leave it to you to minify the plugin file as you require. It simplifies my maintenance of this plugin. A great online minifier can be found at [http://jscompress.com/]
